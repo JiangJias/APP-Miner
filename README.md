@@ -13,7 +13,7 @@ The tool, APP-Miner (API path pattern miner), a novel static analysis framework 
 	$ git clone git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
 ```
 
-* We have made some modification of "deadline" tool to generate bitcode files. (https://github.com/sslab-gatech/deadline.git)
+* We have modified "deadline" tool to generate bitcode files. (https://github.com/sslab-gatech/deadline.git)
 
 ### Build the code preprocessor
 ```sh 
@@ -22,7 +22,7 @@ The tool, APP-Miner (API path pattern miner), a novel static analysis framework 
 	# Now, you can find the executable, `kanalyzer`, in `preprocessor/analyzer/build/lib/`
 ```
 
-* We have made some modification of "Crix" tool to preprocess the bitcode files. (https://github.com/umnsec/crix.git)
+* We have modified of "Crix" tool to preprocess the bitcode files. (https://github.com/umnsec/crix.git)
 
 ### Run the APP-Miner
 ```sh
@@ -36,9 +36,6 @@ The tool, APP-Miner (API path pattern miner), a novel static analysis framework 
 ### Analyze results
 
 * The intermediate results and the final results will be stored in app-miner/result/linux ("linux" will be changed if other software is analyzed). The "xml" file stores the reported potential bugs. Each column from left to right represents: number, API path pattern location, API name, rank, API path pattern, support, API misuse location.
-
-
-
 
 ## More details
 * [The APP-Miner paper (Security and Privacy'24)]
