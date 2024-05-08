@@ -6,6 +6,12 @@ The tool, APP-Miner (API path pattern miner), a novel static analysis framework 
 
 ## How to use APP-Miner
 
+### Build APP-Miner using Docker (Ubuntu OS)
+```sh
+	$ docker pull jiashengjiang/appminer:latest
+	$ docker run -it jiashengjiang/appminer:latest /bin/bash
+```
+
 ### Prepare LLVM bitcode files of OS kernels
 ```sh
 	$ cd deadline/code/srcs/
@@ -35,7 +41,7 @@ The tool, APP-Miner (API path pattern miner), a novel static analysis framework 
 
 ### Analyze results
 
-* The intermediate results and the final results will be stored in app-miner/result/linux ("linux" will be changed if other software is analyzed). The "xml" file stores the reported potential bugs. Each column from left to right represents: number, API path pattern location, API name, rank, API path pattern, support, API misuse location.
+* The intermediate and final results will be stored in app-miner/result/linux ("linux" will be changed if other software is analyzed). The "xml" file stores the reported potential bugs. Each column from left to right represents the number, API path pattern location, API name, rank, API path pattern, support, and API misuse location.
 
 ## More details
 * [The APP-Miner paper (Security and Privacy'24)]
